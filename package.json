@@ -4,12 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "proto-gen":"./proto.gen.sh",
-    "start":"nodemon server",
-    "client":"nodemon client"
+    "proto-gen": "./proto.gen.sh",
+    "start": "nodemon server",
+    "client": "nodemon client",
+    "gen":" protoc --proto_path=./ --js_out=import_style=commonjs,binary:./build proto/random.proto  --grpc-web_out=import_style=commonjs,mode=grpcwebtext:./client/src"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.4.1",
-    "@grpc/proto-loader": "^0.6.5"
+    "@grpc/proto-loader": "^0.6.5",
+    "google-protobuf": "^3.19.0-rc.1",
+    "grpc-web": "^1.3.0"
   }
 }

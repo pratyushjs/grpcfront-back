@@ -132,6 +132,16 @@ get-caller-file@^2.0.5:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
+google-protobuf@^3.19.0-rc.1:
+  version "3.19.0-rc.1"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.19.0-rc.1.tgz#227b0afa80b84e88ce4e3f4e9eb35482d2120eea"
+  integrity sha512-w6ZZj8/RHMLA846ri1YSoJBzlrXAWVGhU1rQDAG551JbMGAP5UxcqLuwUDrx0UhWdhO9ge41hixiMeAjcTr/yQ==
+
+grpc-web@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/grpc-web/-/grpc-web-1.3.0.tgz#4c36d97e7a7b6102a7df463e7822cd86d4f65ed8"
+  integrity sha512-nePImtnrnkZLErFq00Sr1H6AqaRrRptOJEhjUnlTB6RiJgs8ULYvRI9cX2hDwMvyYgakmO3H/wThYvS+Ibdreg==
+
 is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz#f116f8064fe90b3f7844a38997c0b75051269f1d"

@@ -80,9 +80,15 @@ const ChatService = (call) => {
     call.end();
   });
 };
+const   FEChatService=(call,callback)=>{
+  const sessionName= call.request.name||'';
+  const avatarUrl= call.request.avatarUrl || '';
+  if(!sessionName || !avatarUrl) callback(new Error("Name and avatar required"));
+  callback(null,{id:Math.floor((Math.random()*10000))})
+}
 function getServer() {
   const server = new grpc.Server();
-  server.addService(randomPackage.Random.service, {
+  server.addService(randomPackage.Chat.service, {
     PingPong: (req, res) => {
       console.log(req.request);
       res(null, { message: "Pong" });
@@ -90,6 +96,7 @@ function getServer() {
     RandomNumbers: RandomNumberService,
     TodoList: TodoListService,
     Chat: ChatService,
+    FEChatService:FEChatService
   });
   return server;
 }
